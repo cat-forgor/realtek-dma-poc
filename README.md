@@ -15,6 +15,22 @@ Once we have mmio reg access, we program the nic's tx/rx descriptor rings in loo
 
 - A compatible realtek adapter which matches [`nic.h`](./src/nic.h).
 
+## Usage
+
+Run as admin.
+
+After first run, reg vals will be set and you will need to restart your pc.
+
+For this to work, your NIC must be in a link UP state (so we can process descriptors).
+
+Either:
+
+- Plug in an ethernet cable to another pc, router or anything that will give link UP
+
+OR
+
+- Short pins 1-2 & 3-6 on the RJ45 port to bring the link UP
+
 ## Build
 
 ```
