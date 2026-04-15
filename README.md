@@ -30,7 +30,7 @@ dword_1400D0208 and 4 is the check
 
 ### Bypass Guards
 
-Two guards sit in front of the vuln pat bost must eval to false to get into
+Two guards sit in front of the vuln path both must eval to false to get into
 to the DMA path, these are a byte flag on the device extension and the mode check in the
 previous image
 
