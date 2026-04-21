@@ -7,7 +7,7 @@ rt26cx21x64.sys exploit (Realtek PCIe GbE/2.5GbE/5GbE family)
 OID 0xFF816871 maps the nic's mmio bar into the calling proc's virtual addr space,
 (MmLockedPagesSpecifyCache), reachable from um via \\.\RealTekCard{GUID}
 
-This IOCTL (0x0012C818) is gated by a fucking registry value lmfao (DrvMode=4)
+This IOCTL (0x0012C818) is gated by a registry value (DrvMode=4)
 
 Once we have mmio reg access, we program the nic's tx/rx descriptor rings in loopback
 mode to r/w arbitrary phys addrs (AllocateUserPhysicalPages gives us PFNs).
